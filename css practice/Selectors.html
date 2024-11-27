@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        /* .boxes *{
+            color:blue;
+            border:2px solid black;
+        }
+
+        [data-color="primary"]{
+            padding-top: 45px;
+        }
+        .box::first-line{
+            color:yellow;
+        }
+        .box:first-child{background-color: red;}
+
+        .box{
+            padding-top: 45px;
+        }
+        .box:nth-child(even){
+            color:red;
+        } 
+           
+        .box:nth-child(3){
+            background-color: cadetblue;
+        } */
+        
+        .boxes::before{
+            content: "sahithi is a Developer";
+            color: chartreuse;
+        }
+        .boxes::after{
+            content: "Siddhu is a  Dot-Net Developer";
+            color: rgb(255, 77, 0);
+        }
+        
+        ::selection{
+            color:pink;
+            background-color: black;
+        }
+       
+        .box::first-letter{
+            color:rgb(0, 255, 255);
+            font-size: 30px;
+        }
+    
+        /* input::placeholder{
+            color:mediumpurple;
+        } */
+
+        
+        
+    </style>
+</head>
+<body>
+    <div data-color="primary" class="boxes">
+        <div class="box">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+        
+    </div>
+    <br>
+    <input type="text" placeholder="Type your Name Here ">
+
+
+</body>
+</html>

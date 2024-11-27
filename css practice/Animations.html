@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+
+<style>
+
+    .container{
+
+        height:250px;
+        width:300px;
+        background-color: blueviolet;
+    }
+
+     .box{
+         
+        height:40px;
+        width:55px;
+        /* background-color: aqua;
+        animation-name: SahithiAnimation;
+        animation-duration: 1s;
+        animation-iteration-count:infinite;
+       animation-timing-function: cubic-bezier(0, 0, 0, 1.12);
+       animation-delay: 1s;
+       animation-direction:reverse; 
+       animation-play-state:paused; */
+
+        animation: SahithiAnimation  ease-in-out 3s 1;
+
+
+
+
+
+     }
+
+
+     @keyframes SahithiAnimation{
+        from{
+
+           background-color: red;
+
+        }
+         
+        to{
+     background-color: yellow;
+            transform: translateX(1000px);
+        }
+     }
+
+
+
+
+
+</style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box">
+            Box
+
+        </div>
+    </div>
+    
+</body>
+</html>
